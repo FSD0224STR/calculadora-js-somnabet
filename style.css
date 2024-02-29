@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(250, 225, 229);
+}
+.container {
+  max-width: 400px;
+  margin: 10vh auto 0 auto;
+  border-collapse: collapse;
+  font-family: Calibri, Georgia, "Times New Roman", Times, sans-serif;
+}
+
+#display {
+  text-align: right;
+  height: 70px;
+  line-height: 70px;
+  padding: 16px 8px;
+  font-size: 25px;
+  border: 1px solid rgb(85, 85, 255);
+  border-radius: 25px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(85, 85, 255);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons > div {
+  border-radius: 50%;
+  margin: 10% 5% 10% 5%;
+}
+
+.button {
+  line-height: 100px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+#equal {
+  background-color: rgb(85, 85, 255);
+  color: white;
+}
+
+.button:hover {
+  background-color: rgb(255, 160, 176);
+  color: white;
+  transition: 0.2s ease-in-out;
+}
