@@ -25,9 +25,9 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.buttons > div {
-  border-radius: 50%;
-  margin: 10% 5% 10% 5%;
+.firstRow {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
 
 .button {
@@ -35,6 +35,8 @@ body {
   text-align: center;
   font-size: 25px;
   cursor: pointer;
+  border-radius: 50%;
+  margin: 10% 5% 10% 5%;
 }
 
 #equal {
