@@ -4,6 +4,13 @@ var display = document.getElementById("display");
 var operacion = null;
 var primerNumero = null;
 
+function agregarAlHistorial(calculo) {
+  var historialCalculos = document.getElementById("historialCalculos");
+  var calculoDiv = document.createElement("div");
+  calculoDiv.textContent = calculo;
+  historialCalculos.appendChild(calculoDiv);
+}
+
 buttons.forEach(function (button) {
   button.addEventListener("click", function () {
     if (isFinite(this.innerText)) {
@@ -36,6 +43,10 @@ buttons.forEach(function (button) {
           }
           break;
       }
+      agregarAlHistorial(
+        `${primerNumero} ${operacion} ${segundoNumero} = ${display.innerText}`
+      );
+
       operacion = null;
       primerNumero = null;
     }
