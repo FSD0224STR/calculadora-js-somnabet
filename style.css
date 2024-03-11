@@ -68,3 +68,12 @@ body {
   color: rgba(254, 37, 88, 0.683);
   font-size: 25px;
 }
+
+.name {
+  color: rgba(255, 255, 255, 0.833);
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+  text-shadow: 0 0 8px rgba(254, 37, 88, 0.952);
+  margin: 0px;
+}

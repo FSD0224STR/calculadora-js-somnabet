@@ -44,7 +44,7 @@ buttons.forEach(function (button) {
           break;
       }
       agregarAlHistorial(
-        `${primerNumero} ${operacion} ${segundoNumero} = ${display.innerText} 🐖`
+        ` ${primerNumero} ${operacion} ${segundoNumero} = ${display.innerText} 🐖`
       );
 
       operacion = "";
