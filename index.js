@@ -1,8 +1,8 @@
 const buttons = document.querySelectorAll(".button");
 const display = document.getElementById("display");
 
-let operacion = null;
-let primerNumero = null;
+let operacion = "";
+let primerNumero = "";
 
 function agregarAlHistorial(calculo) {
   const historialCalculos = document.getElementById("historialCalculos");
@@ -44,11 +44,11 @@ buttons.forEach(function (button) {
           break;
       }
       agregarAlHistorial(
-        `${primerNumero} ${operacion} ${segundoNumero} = ${display.innerText}`
+        `${primerNumero} ${operacion} ${segundoNumero} = ${display.innerText} 🐖`
       );
 
-      operacion = null;
-      primerNumero = null;
+      operacion = "";
+      primerNumero = "";
     }
   });
 });
