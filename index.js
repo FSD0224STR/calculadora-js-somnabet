@@ -1,12 +1,12 @@
-var buttons = document.querySelectorAll(".button");
-var display = document.getElementById("display");
+const buttons = document.querySelectorAll(".button");
+const display = document.getElementById("display");
 
-var operacion = null;
-var primerNumero = null;
+let operacion = null;
+let primerNumero = null;
 
 function agregarAlHistorial(calculo) {
-  var historialCalculos = document.getElementById("historialCalculos");
-  var calculoDiv = document.createElement("div");
+  const historialCalculos = document.getElementById("historialCalculos");
+  const calculoDiv = document.createElement("div");
   calculoDiv.textContent = calculo;
   historialCalculos.appendChild(calculoDiv);
 }
