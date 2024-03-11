@@ -8,7 +8,7 @@ function agregarAlHistorial(calculo) {
   const historialCalculos = document.getElementById("historialCalculos");
   const calculoDiv = document.createElement("div");
   calculoDiv.textContent = calculo;
-  historialCalculos.appendChild(calculoDiv);
+  historialCalculos.insertBefore(calculoDiv, historialCalculos.firstChild);
 }
 
 buttons.forEach(function (button) {
